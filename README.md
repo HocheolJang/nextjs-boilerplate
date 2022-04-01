@@ -29,8 +29,8 @@ yarn dev
 - Next.js
 - Typescript
 - React
-- Mobx (추가 예정)
-- Emotion (추가 예정)
+- Mobx
+- Emotion
 - Jest (추가 예정)
 - Prettier, eslint(추가 예정)
 

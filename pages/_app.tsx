@@ -1,7 +1,8 @@
-import '../styles/globals.css';
+import { Fragment } from 'react';
 import type { AppProps } from 'next/app';
 import { QueryClient, QueryClientProvider } from 'react-query';
-import { Fragment } from 'react';
+
+import '../styles/globals.css';
 
 function MyApp({ Component, pageProps }: AppProps) {
   const queryClient = new QueryClient();

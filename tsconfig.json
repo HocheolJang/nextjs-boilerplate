@@ -1,20 +1,42 @@
 {
   "compilerOptions": {
+    // 사용할 es버전
     "target": "es5",
+    // 따로 정의하지않는 경우 target 항목에서 지정한 ECMAScript 버전에 따라 기본값이 정의됨
     "lib": ["dom", "dom.iterable", "esnext"],
+    // 컴파일 시 js와 JSX도 포함시킬 것 여부
     "allowJs": true,
+    // 모든 선언 파일 (*.d.ts)의 타입 검사를 건너뜁니다.
     "skipLibCheck": true,
-    "strict": false,
+    // 모든 엄격한 타입 검사 옵션을 활성화
+    "strict": true,
+    // 동일 파일 참조에 대해 일관성 없는 대소문자를 비활성화 처리
     "forceConsistentCasingInFileNames": true,
+    // 결과 파일을 내보낼지 여부
     "noEmit": true,
+    // 이전 컴파일에서 디스크의 파일로 정보를 읽거나/기록하여 증분 컴파일을 활성화 여부
     "incremental": true,
+    // 타입 시스템 호환성을 위해 모든 imports에 대한 namespace 생성을 통해 CommonJS와 ES Modules 간의 상호 운용성이 생기게할 지 여부를 나타냄.'allowSyntheticDefaultImports'를 암시적으로 승인합니다.
     "esModuleInterop": true,
+    // 모듈을 위한 코드 생성 설정
     "module": "esnext",
+    // 모듈 해석 방법을 node의 require() 함수를 이용한 import 해석 과정을 모방 처리함.
     "moduleResolution": "node",
+    // json 확장자로 import 된 module을 포함함
     "resolveJsonModule": true,
+    // 추가 검사를 수행하여 별도의 컴파일 파일 이 안전한지 확인
     "isolatedModules": true,
-    "jsx": "preserve"
+    // .tsx 파일에서 jsx 지원 (default가 "preserve"인데 왜 표기해뒀는지는 모름)
+    "jsx": "preserve",
+    // paths 옵션의 기준 디렉토리
+    "baseUrl": ".",
+    // 모듈별 기준 위치 설정 (절대경로를 위해 설정해둠. 확장자별 다르게도 가능함)
+    "paths": { "@/*": ["Src/*"] }
   },
+  // 타입을 저장할 폴더. src/types에 직접 정의한 타입, node_modules/@types는 부 라이브러리를 정의
+  "typeRoots": ["./src/types", "./node_modules/@types"],
+  // 컴파일할 소스파일 위치, 모든 경로의 ts, js, tsx, jsx 파일들
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  // 컴파일 대상을 제외하는 옵션
   "exclude": ["node_modules"]
 }

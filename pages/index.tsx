@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 import { observer } from 'mobx-react';
-import { DefaultStore } from 'Src/stores/DefaultStore';
+import { DefaultStore } from '@/Stores/DefaultStore';
 
 function HomePage() {
   const { number, increaseNumber, decreaseNumber } = DefaultStore;

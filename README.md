@@ -31,6 +31,7 @@ yarn dev
 - React
 - Mobx
 - Emotion
+- MSW
 - Jest (추가 예정)
 - Prettier, eslint(추가 예정)
 

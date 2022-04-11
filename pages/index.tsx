@@ -1,9 +1,24 @@
 import styled from '@emotion/styled';
 import { observer } from 'mobx-react';
+import { useEffect, useState } from 'react';
 import { DefaultStore } from 'src/stores/defaultStore';
 
 function HomePage() {
   const { number, increaseNumber, decreaseNumber } = DefaultStore;
+  const [reviews, setReviews] = useState(null);
+
+  const handleGetReviews = () => {
+    // Client-side request are mocked by `mocks/browser.js`.
+    fetch('/reviews')
+      .then((res) => res.json())
+      .then(setReviews);
+  };
+
+  useEffect(() => {
+    handleGetReviews();
+  }, []);
+
+  console.log('MSW로 가져오는 리뷰', reviews);
 
   return (
     <Container>

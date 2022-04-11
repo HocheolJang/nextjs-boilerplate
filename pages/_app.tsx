@@ -4,6 +4,10 @@ import { QueryClient, QueryClientProvider } from 'react-query';
 
 import '../styles/globals.css';
 
+if (process.env.NEXT_PUBLIC_API_MOCKING === 'enabled') {
+  require('../src/mocks');
+}
+
 function MyApp({ Component, pageProps }: AppProps) {
   const queryClient = new QueryClient();
 

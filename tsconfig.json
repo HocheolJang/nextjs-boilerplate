@@ -31,7 +31,7 @@
     // paths 옵션의 기준 디렉토리
     "baseUrl": ".",
     // 모듈별 기준 위치 설정 (절대경로를 위해 설정해둠. 확장자별 다르게도 가능함)
-    "paths": { "@/*": ["Src/*"] }
+    "paths": { "@/*": ["srcs/*"] }
   },
   // 타입을 저장할 폴더. src/types에 직접 정의한 타입, node_modules/@types는 부 라이브러리를 정의
   "typeRoots": ["./src/types", "./node_modules/@types"],

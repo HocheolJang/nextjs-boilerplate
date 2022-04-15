@@ -1,5 +1,5 @@
 import { makeAutoObservable } from 'mobx';
-import { DefaultStoreType } from 'srcs/types';
+import { DefaultStoreType } from 'src/types';
 
 const DefaultStore: DefaultStoreType = makeAutoObservable({
   number: 10,

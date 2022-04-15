@@ -32,8 +32,9 @@ yarn dev
 - Mobx
 - Emotion
 - MSW
-- Jest (추가 예정)
-- Prettier, eslint(추가 예정)
+- Jest
+- Prettier
+- eslint
 
 ## TMI
 - 2022년 3월 31일 기준 가장 최신화 된 버전의 패키지를 사용했습니다.

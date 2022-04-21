@@ -1,5 +1,9 @@
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+@import url('https://fonts.googleapis.com/css2?family=Bevan&family=Roboto&display=swap');
+
 html {
-  font-family: 'Spoqa Han Sans Neo', 'Apple SD Gothic Neo', 'sans-serif', Dotum, DotumChe;
+  font-family: 'Spoqa Han Sans Neo', 'Apple SD Gothic Neo', 'sans-serif', Dotum,
+    DotumChe;
   font-size: 16px;
   overflow-y: auto;
   letter-spacing: -0.015rem;

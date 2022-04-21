@@ -2,7 +2,7 @@ import { Fragment } from 'react';
 import type { AppProps } from 'next/app';
 import { QueryClient, QueryClientProvider } from 'react-query';
 
-import '../styles/globals.css';
+import '../src/styles/globals.css';
 
 if (process.env.NEXT_PUBLIC_API_MOCKING === 'enabled') {
   require('../src/mocks');

@@ -21,6 +21,7 @@ input[type='email'],
 input[type='search'],
 textarea,
 button {
+  border-radius: 0;
   -webkit-border-radius: 0;
   -webkit-appearance: none;
   background: transparent;

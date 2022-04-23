@@ -1,6 +1,6 @@
 // TODO: 여기 jest.setup.js 위치 맞는지 체크하기
 
-import { server } from './server';
+import { server } from './src/mocks/server';
 
 // 테스트 시작 전에 서버를 실행한다.
 beforeAll(() => server.listen());
